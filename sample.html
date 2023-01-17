@@ -1,0 +1,85 @@
+<!--<head>
+    <meta charset="utf-8">
+    <title>my first web page</title>
+  <body>
+    <p id="demo"></p>
+    <p>Click the button to print the current page.</p>
+   
+    <button onclick="window.print()">preview</button>
+
+  <script>
+const car={type:"wagenR",model:2020,price:5000,
+details:function(){
+  return this.type+" "+ this.model+" "+this.price;
+}
+};
+document.getElementById("demo").innerHTML=car.details;
+  </script>
+  </body>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: lightgrey;
+  background-repeat:no-repeat ;
+  background-position: right top;
+  background-attachment:fixed ;
+  
+}
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid blue;
+  padding: 50px;
+  margin: 20px;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h1>The @media Queries</h1>
+
+<p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "yellow".</p>
+<p>Box model examples</p>
+<div>The purpose of Pattern Based Writing: Quick & Easy Essay is to quickly and easily teach students how to organize information and make points clear. Then in the Writing with Purpose section of the writing program, students learn to apply their new writing strategies to different types, kinds, genres, and modes of writing. The truth is that it’s quick and easy to get students to write many different types of paragraphs when they have the right foundation.</div>
+
+</body>
+</html>

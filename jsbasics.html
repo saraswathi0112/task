@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Objects</title>
+</head>
+<body>
+    <h2>accessing json objects</h2>
+    <P id="demo"></P>
+    <script>
+        // const txt = '{"name":"John", "age":30, "city":"New York"}'
+        // const obj = JSON.parse(txt);
+        //  document.getElementById("demo").innerHTML = obj.name + ", " + obj.age +"," +obj.city;
+         
+         
+          const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+         const myArr = JSON.parse(text);
+        document.getElementById("demo").innerHTML = myArr[1];
+    </script> 
+</body>
+</html>
